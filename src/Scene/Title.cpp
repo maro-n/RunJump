@@ -3,13 +3,13 @@
 
 Title::Title() {
 	// 画像の初期化
-	images_[BACK] = loadTexture(ResKey::TITLE_BACK);
-	images_[LOGO] = loadTexture(ResKey::TITLE_LOGO);
-	images_[GAME_START] = loadTexture(ResKey::GAME_START);
+	images_[BACK] = loadTexture("TITLE_BACK");
+	images_[LOGO] = loadTexture("TITLE_LOGO");
+	images_[GAME_START] = loadTexture("GAME_START");
 
 	// 音声の初期化
-	sounds_[BGM] = loadMedia(ResKey::TITLE_BGM);
-	sounds_[CLICK] = loadMedia(ResKey::TITLE_CLICK);
+	sounds_[BGM] = loadMedia("TITLE_BGM");
+	sounds_[CLICK] = loadMedia("TITLE_CLICK");
 
 	change_color_game_start = Color::black;
 
@@ -26,6 +26,7 @@ void Title::update() {
 	// 左クリックかエンターでシーンを抜ける
 	if (GetApp.isPushButton(GLFW_MOUSE_BUTTON_LEFT) ||
 			GetApp.isPushKey(GLFW_KEY_ENTER)) {
+
 		sounds_[BGM].stop();
 		sounds_[CLICK].play();
 		SceneManager::getInstance().changeScene(createScene<GameMain>());

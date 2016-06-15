@@ -1,29 +1,8 @@
-﻿2016/06/15 14:18:36 にビルドを開始しました。
+﻿2016/06/15 15:20:18 にビルドを開始しました。
      1>ノード 2 上のプロジェクト "C:\Users\vantan\Documents\GitHub\RunJump\GameTemplate.vcxproj" (Build ターゲット)。
      1>ClCompile:
-         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\x86_amd64\CL.exe /c /Zi /nologo /W3 /WX- /MP /Ox /Ob2 /Oi /GL /D WIN32 /D NDEBUG /D _WINDOWS /D PRODUCT_NAME=GameTemplate /GF /Gm- /EHsc /MD /GS /Gy /fp:precise /Zc:wchar_t /Zc:forScope /Fo"x64\Release\\" /Fd"x64\Release\vc120.pdb" /Gd /TP /errorReport:prompt src\lib\appEnv.cpp src\lib\audio.cpp src\lib\camera2D.cpp src\lib\fileUtil.cpp src\lib\font.cpp src\lib\gamePad.cpp src\lib\glExt.cpp src\lib\glfwWindow.cpp src\lib\glTexture.cpp src\lib\graph.cpp src\lib\matrix.cpp src\lib\os_osx.cpp src\lib\os_win.cpp src\lib\png.cpp src\lib\random.cpp src\lib\streaming.cpp src\lib\streamWav.cpp src\lib\texture.cpp src\lib\utils.cpp src\lib\wav.cpp src\main.cpp src\Player\Player.cpp src\Scene\GameMain.cpp src\Scene\Result.cpp src\Scene\SceneManager.cpp src\Scene\Title.cpp
-         appEnv.cpp
-         audio.cpp
-         camera2D.cpp
-         fileUtil.cpp
-         font.cpp
-         gamePad.cpp
-         glExt.cpp
-         glfwWindow.cpp
-         glTexture.cpp
-         graph.cpp
-         matrix.cpp
-         os_osx.cpp
-         os_win.cpp
-         png.cpp
-         random.cpp
-         streaming.cpp
-         streamWav.cpp
-         texture.cpp
-         utils.cpp
-         wav.cpp
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\x86_amd64\CL.exe /c /Zi /nologo /W3 /WX- /MP /Ox /Ob2 /Oi /GL /D WIN32 /D NDEBUG /D _WINDOWS /D PRODUCT_NAME=GameTemplate /GF /Gm- /EHsc /MD /GS /Gy /fp:precise /Zc:wchar_t /Zc:forScope /Fo"x64\Release\\" /Fd"x64\Release\vc120.pdb" /Gd /TP /errorReport:prompt src\main.cpp src\Scene\GameMain.cpp src\Scene\Result.cpp src\Scene\SceneManager.cpp src\Scene\Title.cpp
          main.cpp
-         Player.cpp
          GameMain.cpp
          Result.cpp
          SceneManager.cpp
@@ -62,4 +41,4 @@
 
 ビルドに成功しました。
 
-経過時間 00:00:17.95
+経過時間 00:00:12.17

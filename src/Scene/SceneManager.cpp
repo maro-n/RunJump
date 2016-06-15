@@ -1,7 +1,7 @@
 
 #include "SceneManager.h"
 
-SceneManager::SceneManager() {
+SceneManager::SceneManager() : animation_(0.f) {
 	// 開始時はタイトルから
 	current_scene = std::make_shared<Title>();
 	previous_scene = nullptr;

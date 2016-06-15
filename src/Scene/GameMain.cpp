@@ -3,15 +3,15 @@
 
 GameMain::GameMain() {
 	// âÊëúÇÃì«Ç›çûÇ›
-	images_[BACK_FIRST] = loadTexture(ResKey::GAME_BACK_FIRST);
-	images_[BACK_SECOND] = loadTexture(ResKey::GAME_BACK_SECOND);
-	images_[BACK_THIRD] = loadTexture(ResKey::GAME_BACK_THIRD);
-	images_[RUN] = loadTexture(ResKey::RUN);
-	images_[JUMP] = loadTexture(ResKey::JUMP);
-	images_[GOOD_JUMP] = loadTexture(ResKey::GOOD_JUMP);
-	images_[EXCELLENT_JUMP] = loadTexture(ResKey::EXCELLENT_JUMP);
-	images_[SMOKE] = loadTexture(ResKey::SMOKE);
-	images_[NUMBER] = loadTexture(ResKey::NUMBER);
+	images_[BACK_FIRST] = loadTexture("GAME_BACK_FIRST");
+	images_[BACK_SECOND] = loadTexture("GAME_BACK_SECOND");
+	images_[BACK_THIRD] = loadTexture("GAME_BACK_THIRD");
+	images_[RUN] = loadTexture("RUN");
+	images_[JUMP] = loadTexture("JUMP");
+	images_[GOOD_JUMP] = loadTexture("GOOD_JUMP");
+	images_[EXCELLENT_JUMP] = loadTexture("EXCELLENT_JUMP");
+	images_[SMOKE] = loadTexture("SMOKE");
+	images_[NUMBER] = loadTexture("NUMBER");
 }
 
 void GameMain::update() {

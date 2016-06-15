@@ -14,6 +14,8 @@ private:
 	std::shared_ptr<Scene> previous_scene;
 	std::shared_ptr<Scene> current_scene;
 
+	float animation_;
+
 public:
 	// ƒVƒ“ƒOƒ‹ƒgƒ“
 	static SceneManager& getInstance() {

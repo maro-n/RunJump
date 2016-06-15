@@ -3,10 +3,10 @@
 
 Result::Result() {
 	// âÊëúÇÃèâä˙âª
-	images_[RESULT_BACK] = loadTexture(ResKey::TITLE_BACK);
-	images_[RESULT_INFO] = loadTexture(ResKey::RESULT_INFO);
-	images_[BACK_TO_TITLE] = loadTexture(ResKey::BACK_TO_TITLE);
-	images_[NUMBER] = loadTexture(ResKey::NUMBER);
+	images_[RESULT_BACK] = loadTexture("TITLE_BACK");
+	images_[RESULT_INFO] = loadTexture("RESULT_INFO");
+	images_[BACK_TO_TITLE] = loadTexture("BACK_TO_TITLE");
+	images_[NUMBER] = loadTexture("NUMBER");
 }
 
 void Result::update() {

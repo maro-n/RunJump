@@ -18,7 +18,7 @@ Player::Player() :
 	run_for_animation_(0),
 	exit_(false)
 {
-	image_ = loadTexture(ResKey::RUN);
+	image_ = loadTexture("RUN");
 }
 
 void Player::run() {
