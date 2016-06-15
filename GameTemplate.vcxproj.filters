@@ -1,0 +1,211 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Headers">
+      <UniqueIdentifier>{b34314d8-4c9f-4a7d-ae48-f2f5e3d783b6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Lib">
+      <UniqueIdentifier>{983490c7-8486-4c78-9811-71ef005a4f66}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Scene">
+      <UniqueIdentifier>{ad1b816d-a41d-4c54-ad41-f8473cfe7fac}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Player">
+      <UniqueIdentifier>{b0d83a22-8e69-492f-b573-b3d99779c272}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resources">
+      <UniqueIdentifier>{23902b24-91c0-4af3-a249-a909b46e835c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Systems">
+      <UniqueIdentifier>{9689bc28-1ecc-458d-b341-5ad6491358bf}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Systems\Score">
+      <UniqueIdentifier>{69220107-3b60-475d-9cab-686ffbae16d8}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="src\lib\appEnv.hpp">
+      <Filter>Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="src\lib\audio.hpp">
+      <Filter>Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="src\lib\camera2D.hpp">
+      <Filter>Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="src\lib\defines.hpp">
+      <Filter>Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="src\lib\fileUtil.hpp">
+      <Filter>Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="src\lib\font.hpp">
+      <Filter>Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="src\lib\framework.hpp">
+      <Filter>Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="src\lib\gamePad.hpp">
+      <Filter>Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="src\lib\glExt.hpp">
+      <Filter>Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="src\lib\glfwWindow.hpp">
+      <Filter>Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="src\lib\glTexture.hpp">
+      <Filter>Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="src\lib\graph.hpp">
+      <Filter>Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="src\lib\matrix.hpp">
+      <Filter>Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="src\lib\os.hpp">
+      <Filter>Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="src\lib\os_osx.hpp">
+      <Filter>Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="src\lib\os_win.hpp">
+      <Filter>Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="src\lib\png.hpp">
+      <Filter>Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="src\lib\random.hpp">
+      <Filter>Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="src\lib\streaming.hpp">
+      <Filter>Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="src\lib\streamWav.hpp">
+      <Filter>Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="src\lib\texture.hpp">
+      <Filter>Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="src\lib\utils.hpp">
+      <Filter>Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="src\lib\vector.hpp">
+      <Filter>Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="src\lib\wav.hpp">
+      <Filter>Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Player\Player.h">
+      <Filter>Player</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Scene\GameMain.h">
+      <Filter>Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Scene\Result.h">
+      <Filter>Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Scene\Scene.h">
+      <Filter>Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Scene\SceneManager.h">
+      <Filter>Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Scene\Title.h">
+      <Filter>Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="src\lib\appSingleton.h">
+      <Filter>Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="src\lib\common.h">
+      <Filter>Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Scene\SceneFactory.h">
+      <Filter>Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Resources\ResKey.h">
+      <Filter>Resources</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Systems\Score\Score.h">
+      <Filter>Systems\Score</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="src\lib\appEnv.cpp">
+      <Filter>Lib</Filter>
+    </ClCompile>
+    <ClCompile Include="src\lib\audio.cpp">
+      <Filter>Lib</Filter>
+    </ClCompile>
+    <ClCompile Include="src\lib\camera2D.cpp">
+      <Filter>Lib</Filter>
+    </ClCompile>
+    <ClCompile Include="src\lib\fileUtil.cpp">
+      <Filter>Lib</Filter>
+    </ClCompile>
+    <ClCompile Include="src\lib\font.cpp">
+      <Filter>Lib</Filter>
+    </ClCompile>
+    <ClCompile Include="src\lib\gamePad.cpp">
+      <Filter>Lib</Filter>
+    </ClCompile>
+    <ClCompile Include="src\lib\glExt.cpp">
+      <Filter>Lib</Filter>
+    </ClCompile>
+    <ClCompile Include="src\lib\glfwWindow.cpp">
+      <Filter>Lib</Filter>
+    </ClCompile>
+    <ClCompile Include="src\lib\glTexture.cpp">
+      <Filter>Lib</Filter>
+    </ClCompile>
+    <ClCompile Include="src\lib\graph.cpp">
+      <Filter>Lib</Filter>
+    </ClCompile>
+    <ClCompile Include="src\lib\matrix.cpp">
+      <Filter>Lib</Filter>
+    </ClCompile>
+    <ClCompile Include="src\lib\os_osx.cpp">
+      <Filter>Lib</Filter>
+    </ClCompile>
+    <ClCompile Include="src\lib\os_win.cpp">
+      <Filter>Lib</Filter>
+    </ClCompile>
+    <ClCompile Include="src\lib\png.cpp">
+      <Filter>Lib</Filter>
+    </ClCompile>
+    <ClCompile Include="src\lib\random.cpp">
+      <Filter>Lib</Filter>
+    </ClCompile>
+    <ClCompile Include="src\lib\streaming.cpp">
+      <Filter>Lib</Filter>
+    </ClCompile>
+    <ClCompile Include="src\lib\streamWav.cpp">
+      <Filter>Lib</Filter>
+    </ClCompile>
+    <ClCompile Include="src\lib\texture.cpp">
+      <Filter>Lib</Filter>
+    </ClCompile>
+    <ClCompile Include="src\lib\utils.cpp">
+      <Filter>Lib</Filter>
+    </ClCompile>
+    <ClCompile Include="src\lib\wav.cpp">
+      <Filter>Lib</Filter>
+    </ClCompile>
+    <ClCompile Include="src\main.cpp" />
+    <ClCompile Include="src\Player\Player.cpp">
+      <Filter>Player</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Scene\GameMain.cpp">
+      <Filter>Scene</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Scene\Result.cpp">
+      <Filter>Scene</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Scene\SceneManager.cpp">
+      <Filter>Scene</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Scene\Title.cpp">
+      <Filter>Scene</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>

@@ -1,0 +1,44 @@
+﻿2016/06/15 11:13:06 にビルドを開始しました。
+     1>ノード 2 上のプロジェクト "C:\Users\vantan\Desktop\就活作品\RunJump\GameTemplate.vcxproj" (Build ターゲット)。
+     1>ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\x86_amd64\CL.exe /c /Zi /nologo /W3 /WX- /MP /Ox /Ob2 /Oi /GL /D WIN32 /D NDEBUG /D _WINDOWS /D PRODUCT_NAME=GameTemplate /GF /Gm- /EHsc /MD /GS /Gy /fp:precise /Zc:wchar_t /Zc:forScope /Fo"x64\Release\\" /Fd"x64\Release\vc120.pdb" /Gd /TP /errorReport:prompt src\Scene\GameMain.cpp src\Scene\Result.cpp src\Scene\SceneManager.cpp src\Scene\Title.cpp src\main.cpp
+         GameMain.cpp
+         Result.cpp
+         SceneManager.cpp
+         Title.cpp
+         main.cpp
+       Link:
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\x86_amd64\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Users\vantan\Desktop\就活作品\RunJump\GameTemplate.exe" /INCREMENTAL:NO /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:\Users\vantan\Desktop\就活作品\RunJump\GameTemplate.pdb" /SUBSYSTEM:WINDOWS /OPT:REF /OPT:ICF /LTCG /TLBID:1 /ENTRY:"mainCRTStartup" /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\Users\vantan\Desktop\就活作品\RunJump\GameTemplate.lib" /MACHINE:X64 x64\Release\appEnv.obj
+         x64\Release\audio.obj
+         x64\Release\camera2D.obj
+         x64\Release\fileUtil.obj
+         x64\Release\font.obj
+         x64\Release\gamePad.obj
+         x64\Release\glExt.obj
+         x64\Release\glfwWindow.obj
+         x64\Release\glTexture.obj
+         x64\Release\graph.obj
+         x64\Release\matrix.obj
+         x64\Release\os_osx.obj
+         x64\Release\os_win.obj
+         x64\Release\png.obj
+         x64\Release\random.obj
+         x64\Release\streaming.obj
+         x64\Release\streamWav.obj
+         x64\Release\texture.obj
+         x64\Release\utils.obj
+         x64\Release\wav.obj
+         x64\Release\main.obj
+         x64\Release\Player.obj
+         x64\Release\GameMain.obj
+         x64\Release\Result.obj
+         x64\Release\SceneManager.obj
+         x64\Release\Title.obj
+         コード生成しています。
+         コード生成が終了しました。
+         GameTemplate.vcxproj -> C:\Users\vantan\Desktop\就活作品\RunJump\GameTemplate.exe
+     1>プロジェクト "C:\Users\vantan\Desktop\就活作品\RunJump\GameTemplate.vcxproj" (Build ターゲット) のビルドが完了しました。
+
+ビルドに成功しました。
+
+経過時間 00:00:09.86
