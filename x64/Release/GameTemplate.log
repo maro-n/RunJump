@@ -1,14 +1,35 @@
-﻿2016/06/15 11:13:06 にビルドを開始しました。
-     1>ノード 2 上のプロジェクト "C:\Users\vantan\Desktop\就活作品\RunJump\GameTemplate.vcxproj" (Build ターゲット)。
+﻿2016/06/15 14:18:36 にビルドを開始しました。
+     1>ノード 2 上のプロジェクト "C:\Users\vantan\Documents\GitHub\RunJump\GameTemplate.vcxproj" (Build ターゲット)。
      1>ClCompile:
-         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\x86_amd64\CL.exe /c /Zi /nologo /W3 /WX- /MP /Ox /Ob2 /Oi /GL /D WIN32 /D NDEBUG /D _WINDOWS /D PRODUCT_NAME=GameTemplate /GF /Gm- /EHsc /MD /GS /Gy /fp:precise /Zc:wchar_t /Zc:forScope /Fo"x64\Release\\" /Fd"x64\Release\vc120.pdb" /Gd /TP /errorReport:prompt src\Scene\GameMain.cpp src\Scene\Result.cpp src\Scene\SceneManager.cpp src\Scene\Title.cpp src\main.cpp
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\x86_amd64\CL.exe /c /Zi /nologo /W3 /WX- /MP /Ox /Ob2 /Oi /GL /D WIN32 /D NDEBUG /D _WINDOWS /D PRODUCT_NAME=GameTemplate /GF /Gm- /EHsc /MD /GS /Gy /fp:precise /Zc:wchar_t /Zc:forScope /Fo"x64\Release\\" /Fd"x64\Release\vc120.pdb" /Gd /TP /errorReport:prompt src\lib\appEnv.cpp src\lib\audio.cpp src\lib\camera2D.cpp src\lib\fileUtil.cpp src\lib\font.cpp src\lib\gamePad.cpp src\lib\glExt.cpp src\lib\glfwWindow.cpp src\lib\glTexture.cpp src\lib\graph.cpp src\lib\matrix.cpp src\lib\os_osx.cpp src\lib\os_win.cpp src\lib\png.cpp src\lib\random.cpp src\lib\streaming.cpp src\lib\streamWav.cpp src\lib\texture.cpp src\lib\utils.cpp src\lib\wav.cpp src\main.cpp src\Player\Player.cpp src\Scene\GameMain.cpp src\Scene\Result.cpp src\Scene\SceneManager.cpp src\Scene\Title.cpp
+         appEnv.cpp
+         audio.cpp
+         camera2D.cpp
+         fileUtil.cpp
+         font.cpp
+         gamePad.cpp
+         glExt.cpp
+         glfwWindow.cpp
+         glTexture.cpp
+         graph.cpp
+         matrix.cpp
+         os_osx.cpp
+         os_win.cpp
+         png.cpp
+         random.cpp
+         streaming.cpp
+         streamWav.cpp
+         texture.cpp
+         utils.cpp
+         wav.cpp
+         main.cpp
+         Player.cpp
          GameMain.cpp
          Result.cpp
          SceneManager.cpp
          Title.cpp
-         main.cpp
        Link:
-         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\x86_amd64\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Users\vantan\Desktop\就活作品\RunJump\GameTemplate.exe" /INCREMENTAL:NO /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:\Users\vantan\Desktop\就活作品\RunJump\GameTemplate.pdb" /SUBSYSTEM:WINDOWS /OPT:REF /OPT:ICF /LTCG /TLBID:1 /ENTRY:"mainCRTStartup" /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\Users\vantan\Desktop\就活作品\RunJump\GameTemplate.lib" /MACHINE:X64 x64\Release\appEnv.obj
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\x86_amd64\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Users\vantan\Documents\GitHub\RunJump\GameTemplate.exe" /INCREMENTAL:NO /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:\Users\vantan\Documents\GitHub\RunJump\GameTemplate.pdb" /SUBSYSTEM:WINDOWS /OPT:REF /OPT:ICF /LTCG /TLBID:1 /ENTRY:"mainCRTStartup" /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\Users\vantan\Documents\GitHub\RunJump\GameTemplate.lib" /MACHINE:X64 x64\Release\appEnv.obj
          x64\Release\audio.obj
          x64\Release\camera2D.obj
          x64\Release\fileUtil.obj
@@ -36,9 +57,9 @@
          x64\Release\Title.obj
          コード生成しています。
          コード生成が終了しました。
-         GameTemplate.vcxproj -> C:\Users\vantan\Desktop\就活作品\RunJump\GameTemplate.exe
-     1>プロジェクト "C:\Users\vantan\Desktop\就活作品\RunJump\GameTemplate.vcxproj" (Build ターゲット) のビルドが完了しました。
+         GameTemplate.vcxproj -> C:\Users\vantan\Documents\GitHub\RunJump\GameTemplate.exe
+     1>プロジェクト "C:\Users\vantan\Documents\GitHub\RunJump\GameTemplate.vcxproj" (Build ターゲット) のビルドが完了しました。
 
 ビルドに成功しました。
 
-経過時間 00:00:09.86
+経過時間 00:00:17.95
