@@ -9,12 +9,26 @@
 class Player {
 private:
 
-	enum PlayerState {
-		Running,
-		Jumping,
-	};
+	enum PlayerTex {
+		RUN,
+		JUMP,
+		GOOD_JUMP,
+		EXCELLENT_JUMP,
+		SMOKE,
 
-	Texture image_;
+		TEX_MAX,
+	};
+	Texture images_[TEX_MAX];
+
+	enum PlayerMed {
+		RUNNING,
+		JUMP,
+		NICE_JUMP,
+		JUMP_KEEP,
+
+		MEDIA_MAX
+	};
+	Media sounds_[MEDIA_MAX];
 
   Vec2f pos_;
   const Vec2f size_;

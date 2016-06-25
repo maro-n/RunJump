@@ -14,12 +14,14 @@ const std::map<std::string, std::string> tex_path = {
 	{ "GAME_BACK_FIRST", "res/field.png" },
 	{ "GAME_BACK_SECOND", "res/field2.png" },
 	{ "GAME_BACK_THIRD", "res/field3.png" },
+	{ "NUMBER", "res/number.png" },
+
+	// プレイヤー関連
 	{ "RUN", "res/run.png" },
 	{ "JUMP", "res/jump.png" },
 	{ "GOOD_JUMP", "res/Good.png" },
 	{ "EXCELLENT_JUMP", "res/Excellent.png" },
 	{ "SMOKE", "res/smoke.png" },
-	{ "NUMBER", "res/number.png" },
 		
 	// リザルト
 	{ "RESULT_INFO", "res/result.png" },
@@ -31,6 +33,20 @@ static const std::map<std::string, std::string> med_path = {
 	// タイトル
 	{ "TITLE_BGM", "res/title_bgm.wav" },
 	{ "TITLE_CLICK", "res/se.wav" },
+
+	// ゲーム本編
+	{ "GAMEMAIN_BGM", "res/game_bgm.wav" },
+	
+	// プレイヤー
+	{ "PLAYER_RUNNING", "res/running.wav" },
+	{ "PLAYER_JUMP", "res/jump.wav" },
+	{ "PLAYER_NICE_JUMP", "res/nice_jump.wav" },
+	{ "PLAYER_JUMP_KEEP", "res/smoke_sound.wav" },
+
+	// リザルト
+	{ "" , "" },
+	{ "" , "" },
+	{ "" , "" },
 };
 
 // 画像読み込み

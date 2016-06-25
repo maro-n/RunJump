@@ -23,13 +23,13 @@ void Result::draw() {
 	drawTextureBox(0 - 2048 / 2, 0 - 1024 / 2, 2048, 1024,
 		0, 0, 2048, 1024,
 		images_[RESULT_BACK],
-		Color(1, 1, 1));
+		Color::white);
 
 	// リザルト情報を表示
 	drawTextureBox(0 - 2048 / 2, 0 - 1024 / 2, 2048, 1024,
 		0, 0, 2048, 1024,
 		images_[RESULT_INFO],
-		Color(1, 1, 1));
+		Color::white);
 
 	// 「Return to Title」を表示
 	drawTextureBox(0 - 400, 0 - 700, 512, 256,

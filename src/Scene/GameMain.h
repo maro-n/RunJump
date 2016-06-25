@@ -19,16 +19,19 @@ private:
 		BACK_FIRST,
 		BACK_SECOND,
 		BACK_THIRD,
-		RUN,
-		JUMP,
-		GOOD_JUMP,
-		EXCELLENT_JUMP,
-		SMOKE,
 		NUMBER,
 
 		MAX,
 	};
 	Texture images_[MAX];
+
+	// âπê∫àÍóó
+	enum GameMed {
+		BGM,
+
+		MEDIA_MAX,
+	};
+	Media sounds_[MEDIA_MAX];
 
 	bool isExit();
 

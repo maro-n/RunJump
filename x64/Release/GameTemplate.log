@@ -1,12 +1,13 @@
-﻿2016/06/15 15:20:18 にビルドを開始しました。
+﻿2016/06/26 4:45:27 にビルドを開始しました。
      1>ノード 2 上のプロジェクト "C:\Users\vantan\Documents\GitHub\RunJump\GameTemplate.vcxproj" (Build ターゲット)。
      1>ClCompile:
-         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\x86_amd64\CL.exe /c /Zi /nologo /W3 /WX- /MP /Ox /Ob2 /Oi /GL /D WIN32 /D NDEBUG /D _WINDOWS /D PRODUCT_NAME=GameTemplate /GF /Gm- /EHsc /MD /GS /Gy /fp:precise /Zc:wchar_t /Zc:forScope /Fo"x64\Release\\" /Fd"x64\Release\vc120.pdb" /Gd /TP /errorReport:prompt src\main.cpp src\Scene\GameMain.cpp src\Scene\Result.cpp src\Scene\SceneManager.cpp src\Scene\Title.cpp
-         main.cpp
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\x86_amd64\CL.exe /c /Zi /nologo /W3 /WX- /MP /Ox /Ob2 /Oi /GL /D WIN32 /D NDEBUG /D _WINDOWS /D PRODUCT_NAME=GameTemplate /GF /Gm- /EHsc /MD /GS /Gy /fp:precise /Zc:wchar_t /Zc:forScope /Fo"x64\Release\\" /Fd"x64\Release\vc120.pdb" /Gd /TP /errorReport:prompt src\Player\Player.cpp src\Scene\GameMain.cpp src\Scene\Result.cpp src\Scene\SceneManager.cpp src\Scene\Title.cpp src\main.cpp
+         Player.cpp
          GameMain.cpp
          Result.cpp
          SceneManager.cpp
          Title.cpp
+         main.cpp
        Link:
          C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\x86_amd64\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Users\vantan\Documents\GitHub\RunJump\GameTemplate.exe" /INCREMENTAL:NO /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:\Users\vantan\Documents\GitHub\RunJump\GameTemplate.pdb" /SUBSYSTEM:WINDOWS /OPT:REF /OPT:ICF /LTCG /TLBID:1 /ENTRY:"mainCRTStartup" /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\Users\vantan\Documents\GitHub\RunJump\GameTemplate.lib" /MACHINE:X64 x64\Release\appEnv.obj
          x64\Release\audio.obj
@@ -41,4 +42,4 @@
 
 ビルドに成功しました。
 
-経過時間 00:00:12.17
+経過時間 00:00:12.11

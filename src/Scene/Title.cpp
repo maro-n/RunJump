@@ -11,6 +11,7 @@ Title::Title() {
 	sounds_[BGM] = loadMedia("TITLE_BGM");
 	sounds_[CLICK] = loadMedia("TITLE_CLICK");
 
+	change_color_logo_ = Color::white;
 	change_color_game_start = Color::black;
 
 	anima_ = 0;
@@ -19,6 +20,7 @@ Title::Title() {
 void Title::update() {
 	// BGM‚ª–Â‚Á‚Ä‚È‚¯‚ê‚Îƒ‹[ƒvÄ¶
 	if (!sounds_[BGM].isPlaying()) {
+		sounds_[BGM].gain(0.2f);
 		sounds_[BGM].play();
 		sounds_[BGM].looping(true);
 	}
@@ -28,6 +30,7 @@ void Title::update() {
 			GetApp.isPushKey(GLFW_KEY_ENTER)) {
 
 		sounds_[BGM].stop();
+		sounds_[CLICK].gain(0.1f);
 		sounds_[CLICK].play();
 		SceneManager::getInstance().changeScene(createScene<GameMain>());
 	}

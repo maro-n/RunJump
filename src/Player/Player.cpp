@@ -2,7 +2,7 @@
 #include "Player.h"
 #include <string>
 
-
+// プレイヤーの初期化
 Player::Player() :
 	pos_(Vec2f(-680, -380)),
 	size_(Vec2f(150, 225)),
@@ -18,9 +18,21 @@ Player::Player() :
 	run_for_animation_(0),
 	exit_(false)
 {
-	image_ = loadTexture("RUN");
+	// 画像の初期化
+	images_[RUN] = loadTexture("RUN");
+	images_[JUMP] = loadTexture("JUMP");
+	images_[GOOD_JUMP] = loadTexture("GOOD_JUMP");
+	images_[EXCELLENT_JUMP] = loadTexture("EXCELLENT_JUMP");
+	images_[SMOKE] = loadTexture("SMOKE");
+
+	// 音声の初期化
+	sounds_[RUNNING] = loadMedia("RUNNING");
+	sounds_[JUMP] = loadMedia("JUMP");
+	sounds_[NICE_JUMP] = loadMedia("NICE_JUMP");
+	sounds_[JUMP_KEEP] = loadMedia("JUMP_KEEP");
 }
 
+// 走るアニメーションと処理
 void Player::run() {
 	animation_count_++;
 	run_distance_ += velocity_.x();
@@ -32,6 +44,7 @@ void Player::run() {
 	}
 }
 
+// 跳べる状態かチェック
 bool Player::jumpable() {
 	const int jumpable_area = -200;
 
@@ -42,6 +55,7 @@ bool Player::jumpable() {
 	return false;
 }
 
+// 跳ぶ（重力などの処理）
 void Player::jump() {
 	const float gravity = -0.2f;
 
@@ -64,6 +78,7 @@ void Player::jump() {
 	}
 }
 
+// 天井にキャラが触れているかどうか
 void Player::onCeiling() {
 	const int ceiling_height = (WindowSize::HEIGHT * 0.5) - size_.y();
 
@@ -73,6 +88,7 @@ void Player::onCeiling() {
 	}
 }
 
+// 地面にキャラが触れているかどうか
 void Player::onGround() {
 	const int ground_height = -380;
 
@@ -86,13 +102,15 @@ void Player::onGround() {
 	}
 }
 
+// 描画
 void Player::draw() {
 	drawTextureBox(pos_.x(), pos_.y(), size_.x(), size_.y(),
 		cut_pos_.x(), cut_pos_.y(), cut_size_.x(), cut_size_.y(),
-		image_,
+		images_[RUN],
 		Color(1, 1, 1));
 }
 
+// 更新
 void Player::update() {
 	onCeiling();
 	onGround();
