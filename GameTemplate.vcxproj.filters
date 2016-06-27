@@ -17,10 +17,10 @@
       <UniqueIdentifier>{23902b24-91c0-4af3-a249-a909b46e835c}</UniqueIdentifier>
     </Filter>
     <Filter Include="Systems">
-      <UniqueIdentifier>{9689bc28-1ecc-458d-b341-5ad6491358bf}</UniqueIdentifier>
+      <UniqueIdentifier>{7cadc11f-7ce5-4455-9746-59e0449fc140}</UniqueIdentifier>
     </Filter>
     <Filter Include="Systems\Score">
-      <UniqueIdentifier>{69220107-3b60-475d-9cab-686ffbae16d8}</UniqueIdentifier>
+      <UniqueIdentifier>{77897cc1-a8d8-4fd4-acb7-d3e799c0ad82}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>

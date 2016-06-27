@@ -10,6 +10,7 @@
 #include "Title.h"
 #include "Result.h"
 #include "../Player/Player.h"
+#include "../Systems/Score/Score.h"
 
 class GameMain : public Scene {
 private:

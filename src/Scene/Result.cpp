@@ -39,4 +39,19 @@ void Result::draw() {
 		0,
 		Vec2f(1.5, 1.5),
 		Vec2f(0, 0));
+
+	// スコアの表示
+	{
+		const Vec2f score_size = Vec2f(100, 150);
+
+		const Vec2f now_score_offset = Vec2f(12.5f, -15.0f);
+		dispScore(images_[NUMBER],
+			now_score_offset, score_size,
+			current_score);
+
+		const Vec2f high_score_offset = Vec2f(12.5f, -285.0f);
+		dispScore(images_[NUMBER],
+			high_score_offset, score_size,
+			high_score);
+	}
 }

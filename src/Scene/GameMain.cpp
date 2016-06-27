@@ -26,6 +26,8 @@ void GameMain::update() {
 		SceneManager::getInstance().changeScene(createScene<Result>());
 	}
 
+	current_score = player_.run_distance_ / player_.velocity_.x();
+
 	player_.update();
 }
 
@@ -38,7 +40,7 @@ void GameMain::draw() {
 
 	// TIPS:”wŒi“ñ–‡–Ú‚Í‘–‚Á‚½‹——£‚É‰‚¶‚ÄØ‚è‘Ö‚¦‚é
 	if (player_.run_distance_ / WindowSize::WIDTH < 2) {
-	// ”wŒiiƒŒ[ƒ“j
+		// ”wŒiiƒŒ[ƒ“j
 		drawTextureBox(Window::left - player_.run_for_animation_ + WindowSize::WIDTH, Window::down, WindowSize::WIDTH, WindowSize::HEIGHT,
 			0, 0, WindowSize::WIDTH, WindowSize::HEIGHT,
 			images_[BACK_FIRST],
@@ -46,7 +48,7 @@ void GameMain::draw() {
 	}
 	// ”wŒiiƒŒ[ƒ“•“yj
 	else if (player_.run_distance_ / WindowSize::WIDTH >= 2 &&
-				   player_.run_distance_ / WindowSize::WIDTH < 3) {
+		player_.run_distance_ / WindowSize::WIDTH < 3) {
 		drawTextureBox(Window::left - player_.run_for_animation_ + WindowSize::WIDTH, Window::down, WindowSize::WIDTH, WindowSize::HEIGHT,
 			0, 0, WindowSize::WIDTH, WindowSize::HEIGHT,
 			images_[BACK_SECOND],
@@ -66,7 +68,15 @@ void GameMain::draw() {
 			images_[BACK_THIRD],
 			Color::white);
 	}
-
+	// ƒXƒRƒA‚Ì•\¦
+	{
+		const Vec2f offset = Vec2f(Window::right - 350, Window::down + 150);
+		const Vec2f score_size = Vec2f(100, 100);
+		dispScore(images_[NUMBER],
+			offset,
+			score_size,
+			current_score);
+	}
 	player_.draw();
 }
 

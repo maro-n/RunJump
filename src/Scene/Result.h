@@ -9,6 +9,7 @@
 #include "SceneManager.h"
 #include "Title.h"
 #include "GameMain.h"
+#include "../Systems/Score/Score.h"
 
 class Result : public Scene {
 private:

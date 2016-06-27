@@ -17,11 +17,10 @@ const std::map<std::string, std::string> tex_path = {
 	{ "NUMBER", "res/number.png" },
 
 	// プレイヤー関連
-	{ "RUN", "res/run.png" },
-	{ "JUMP", "res/jump.png" },
-	{ "GOOD_JUMP", "res/Good.png" },
-	{ "EXCELLENT_JUMP", "res/Excellent.png" },
-	{ "SMOKE", "res/smoke.png" },
+	{ "PLAYER_RUN", "res/run.png" },
+	{ "PLAYER_GOOD_JUMP", "res/Good.png" },
+	{ "PLAYER_EXCELLENT_JUMP", "res/Excellent.png" },
+	{ "PLAYER_SMOKE", "res/smoke.png" },
 		
 	// リザルト
 	{ "RESULT_INFO", "res/result.png" },

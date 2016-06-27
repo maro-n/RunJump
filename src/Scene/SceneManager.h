@@ -16,6 +16,9 @@ private:
 
 	float animation_;
 
+	//bool fadeOut();
+	//bool fadeIn();
+
 public:
 	// ƒVƒ“ƒOƒ‹ƒgƒ“
 	static SceneManager& getInstance() {

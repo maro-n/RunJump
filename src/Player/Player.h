@@ -11,7 +11,6 @@ private:
 
 	enum PlayerTex {
 		RUN,
-		JUMP,
 		GOOD_JUMP,
 		EXCELLENT_JUMP,
 		SMOKE,
@@ -39,7 +38,6 @@ private:
 	
 	void run();
 	int run_value_;
-	Vec2f velocity_;
 
 	int jump_rate_;
 	int jump_count_;
@@ -52,6 +50,8 @@ private:
 
 public:
   Player();
+
+	Vec2f velocity_;
 
 	int run_distance_;
 	int run_for_animation_;

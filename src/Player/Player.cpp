@@ -19,17 +19,16 @@ Player::Player() :
 	exit_(false)
 {
 	// 画像の初期化
-	images_[RUN] = loadTexture("RUN");
-	images_[JUMP] = loadTexture("JUMP");
-	images_[GOOD_JUMP] = loadTexture("GOOD_JUMP");
-	images_[EXCELLENT_JUMP] = loadTexture("EXCELLENT_JUMP");
-	images_[SMOKE] = loadTexture("SMOKE");
+	images_[RUN] = loadTexture("PLAYER_RUN");
+	images_[GOOD_JUMP] = loadTexture("PLAYER_GOOD_JUMP");
+	images_[EXCELLENT_JUMP] = loadTexture("PLAYER_EXCELLENT_JUMP");
+	images_[SMOKE] = loadTexture("PLAYER_SMOKE");
 
 	// 音声の初期化
-	sounds_[RUNNING] = loadMedia("RUNNING");
-	sounds_[JUMP] = loadMedia("JUMP");
-	sounds_[NICE_JUMP] = loadMedia("NICE_JUMP");
-	sounds_[JUMP_KEEP] = loadMedia("JUMP_KEEP");
+	sounds_[RUNNING] = loadMedia("PLAYER_RUNNING");
+	sounds_[JUMP] = loadMedia("PLAYER_JUMP");
+	sounds_[NICE_JUMP] = loadMedia("PLAYER_NICE_JUMP");
+	sounds_[JUMP_KEEP] = loadMedia("PLAYER_JUMP_KEEP");
 }
 
 // 走るアニメーションと処理
@@ -46,9 +45,9 @@ void Player::run() {
 
 // 跳べる状態かチェック
 bool Player::jumpable() {
-	const int jumpable_area = -200;
+	const int jumpable_area = 200;
 
-	if ((run_distance_ + jumpable_area) / WindowSize::WIDTH >= 3) {
+	if ((WindowSize::WIDTH - jumpable_area) < run_distance_) {
 		return true;
 	}
 
@@ -63,11 +62,13 @@ void Player::jump() {
 	pos_.y() = pos_.y() + (acceleration_ * 0.5) + velocity_.y();
 
 	if (jumpable()) {
-		// ジャンプの評価
-		//if () { jump_rate = }
-
+		
 		if (GetApp.isPushKey(GLFW_KEY_SPACE)) {
 			if (jump_count_ < 3) {
+				// ジャンプの評価
+				//if () { jump_rate = }
+
+				sounds_[JUMP].play();
 				acceleration_ = jump_rate_ + gravity;
 				jump_count_++;
 			}
