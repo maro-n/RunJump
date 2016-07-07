@@ -1,35 +1,16 @@
 #pragma once
 
-static unsigned int current_score;
-static unsigned int high_score;
+#include "../../lib/appSingleton.h"
 
-static void dispScore (const Texture& texture_, 
-											 const Vec2f& offset_, const Vec2f& size_, 
-											 const unsigned int score_) {
-	// 100‚ÌˆÊ
-	if (score_ >= 100) {
-		int hundred_distance = score_ / 100;
-		drawTextureBox(offset_.x(), offset_.y(), size_.x(), size_.y(),
-			50 * hundred_distance, 0, 50, 70,
-			texture_,
-			Color::white);
-	}
+class Score {
+private:
+	Score() = default;
+	Score(Score&) = delete;
 
-	// 10‚ÌˆÊ
-	if (score_ >= 10) {
-		int ten_distance = score_ % 100 / 10;
-		drawTextureBox(offset_.x() + 100, offset_.y(), size_.x(), size_.y(),
-			50 * ten_distance, 0, 50, 70,
-			texture_,
-			Color::white);
-	}
+public:
+	static unsigned int current_score;
+	static unsigned int high_score;
 
-	// 1‚ÌˆÊ
-	if (score_ >= 0) {
-		int one_distance = score_ % 10;
-		drawTextureBox(offset_.x() + 200, offset_.y(), size_.x(), size_.y(),
-			50 * one_distance, 0, 50, 70,
-			texture_,
-			Color::white);
-	}
-}
+	static void dispScore(const Texture&, const Vec2f&,
+		const Vec2f&, const unsigned int);
+};

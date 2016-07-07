@@ -23,6 +23,10 @@ private:
 	};
 	Texture images_[MAX];
 
+	//enum ResultMed {
+
+	//};
+
 public:
 	Result();
 

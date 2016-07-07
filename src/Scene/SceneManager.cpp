@@ -25,7 +25,6 @@ bool SceneManager::exit() {
 //	return animation_ < 1.0f;
 //}
 //
-//
 //// フェードイン
 //bool SceneManager::fadeIn() {
 //	if (animation_ > 0) { animation_ -= 0.05f; }

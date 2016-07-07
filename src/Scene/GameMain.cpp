@@ -24,9 +24,11 @@ void GameMain::update() {
 		sounds_[BGM].stop();
 
 		SceneManager::getInstance().changeScene(createScene<Result>());
+		return;
 	}
 
-	current_score = player_.run_distance_ / player_.velocity_.x();
+	Score::current_score = player_.run_distance_ / player_.velocity_.x();
+	assert(Score::current_score != 0);
 
 	player_.update();
 }
@@ -72,11 +74,12 @@ void GameMain::draw() {
 	{
 		const Vec2f offset = Vec2f(Window::right - 350, Window::down + 150);
 		const Vec2f score_size = Vec2f(100, 100);
-		dispScore(images_[NUMBER],
+		Score::dispScore(images_[NUMBER],
 			offset,
 			score_size,
-			current_score);
+			Score::current_score);
 	}
+
 	player_.draw();
 }
 

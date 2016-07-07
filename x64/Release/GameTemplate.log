@@ -1,12 +1,8 @@
-﻿2016/06/27 12:45:17 にビルドを開始しました。
+﻿2016/07/07 18:06:47 にビルドを開始しました。
      1>ノード 2 上のプロジェクト "C:\Users\vantan\Documents\GitHub\RunJump\GameTemplate.vcxproj" (Build ターゲット)。
      1>ClCompile:
-         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\x86_amd64\CL.exe /c /Zi /nologo /W3 /WX- /MP /Ox /Ob2 /Oi /GL /D WIN32 /D NDEBUG /D _WINDOWS /D PRODUCT_NAME=GameTemplate /GF /Gm- /EHsc /MD /GS /Gy /fp:precise /Zc:wchar_t /Zc:forScope /Fo"x64\Release\\" /Fd"x64\Release\vc120.pdb" /Gd /TP /errorReport:prompt src\Scene\GameMain.cpp src\Scene\Result.cpp src\Scene\SceneManager.cpp src\Scene\Title.cpp src\main.cpp
-         GameMain.cpp
-         Result.cpp
-         SceneManager.cpp
-         Title.cpp
-         main.cpp
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\x86_amd64\CL.exe /c /Zi /nologo /W3 /WX- /MP /Ox /Ob2 /Oi /GL /D WIN32 /D NDEBUG /D _WINDOWS /D PRODUCT_NAME=GameTemplate /GF /Gm- /EHsc /MD /GS /Gy /fp:precise /Zc:wchar_t /Zc:forScope /Fo"x64\Release\\" /Fd"x64\Release\vc120.pdb" /Gd /TP /errorReport:prompt src\Player\Player.cpp
+         Player.cpp
        Link:
          C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\x86_amd64\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Users\vantan\Documents\GitHub\RunJump\GameTemplate.exe" /INCREMENTAL:NO /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:\Users\vantan\Documents\GitHub\RunJump\GameTemplate.pdb" /SUBSYSTEM:WINDOWS /OPT:REF /OPT:ICF /LTCG /TLBID:1 /ENTRY:"mainCRTStartup" /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\Users\vantan\Documents\GitHub\RunJump\GameTemplate.lib" /MACHINE:X64 x64\Release\appEnv.obj
          x64\Release\audio.obj
@@ -34,6 +30,7 @@
          x64\Release\Result.obj
          x64\Release\SceneManager.obj
          x64\Release\Title.obj
+         x64\Release\Score.obj
          コード生成しています。
          コード生成が終了しました。
          GameTemplate.vcxproj -> C:\Users\vantan\Documents\GitHub\RunJump\GameTemplate.exe
@@ -41,4 +38,4 @@
 
 ビルドに成功しました。
 
-経過時間 00:00:12.02
+経過時間 00:00:08.81

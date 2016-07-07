@@ -44,6 +44,7 @@ private:
 	float acceleration_;
 	void jump();
 	bool jumpable();
+	void foul();
 
 	void onCeiling();
 	void onGround();

@@ -45,13 +45,19 @@ void Player::run() {
 
 // 跳べる状態かチェック
 bool Player::jumpable() {
-	const int jumpable_area = 200;
+	const int jumpable_area = 250;
 
-	if ((WindowSize::WIDTH - jumpable_area) < run_distance_) {
+	if (((WindowSize::WIDTH * 3) - jumpable_area) < run_distance_) {
 		return true;
 	}
 
 	return false;
+}
+
+void Player::foul() {
+	if (WindowSize::WIDTH * 3 + 100 < run_distance_) {
+		exit_ = true;
+	}
 }
 
 // 跳ぶ（重力などの処理）
@@ -118,6 +124,8 @@ void Player::update() {
 
 	run();
 	jump();
+
+	foul();
 
 	const int animation_minute = 3;
 	const int animation_num = 7;

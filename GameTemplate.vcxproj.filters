@@ -207,5 +207,8 @@
     <ClCompile Include="src\Scene\Title.cpp">
       <Filter>Scene</Filter>
     </ClCompile>
+    <ClCompile Include="src\Systems\Score\Score.cpp">
+      <Filter>Systems\Score</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>

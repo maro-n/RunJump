@@ -82,6 +82,7 @@
     <ClCompile Include="src\Scene\Result.cpp" />
     <ClCompile Include="src\Scene\SceneManager.cpp" />
     <ClCompile Include="src\Scene\Title.cpp" />
+    <ClCompile Include="src\Systems\Score\Score.cpp" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <ProjectGuid>{9EFD6A36-08E8-485E-B135-5B6519C0F6B1}</ProjectGuid>

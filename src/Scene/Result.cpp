@@ -45,13 +45,13 @@ void Result::draw() {
 		const Vec2f score_size = Vec2f(100, 150);
 
 		const Vec2f now_score_offset = Vec2f(12.5f, -15.0f);
-		dispScore(images_[NUMBER],
+		Score::dispScore(images_[NUMBER],
 			now_score_offset, score_size,
-			current_score);
+			Score::current_score);
 
 		const Vec2f high_score_offset = Vec2f(12.5f, -285.0f);
-		dispScore(images_[NUMBER],
+		Score::dispScore(images_[NUMBER],
 			high_score_offset, score_size,
-			high_score);
+			Score::high_score);
 	}
 }
