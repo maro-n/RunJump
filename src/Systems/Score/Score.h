@@ -1,16 +1,16 @@
 #pragma once
 
 #include "../../lib/appSingleton.h"
+#include "../../lib/font.hpp"
 
 class Score {
-private:
-	Score() = default;
-	Score(Score&) = delete;
-
 public:
+	Score();
+
+	static std::string intToString(int);
+
+	static Font font_;
+
 	static unsigned int current_score;
 	static unsigned int high_score;
-
-	static void dispScore(const Texture&, const Vec2f&,
-		const Vec2f&, const unsigned int);
 };

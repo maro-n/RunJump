@@ -8,6 +8,7 @@
 #include <array>
 #include <set>
 #include <vector>
+#include <sstream>
 #include "glfwWindow.hpp"
 #include "vector.hpp"
 #include "camera2D.hpp"
@@ -15,6 +16,7 @@
 #include "audio.hpp"
 #include "gamePad.hpp"
 #include "os.hpp"
+#include "font.hpp"
 
 
 // マウスボタンの省略名を定義

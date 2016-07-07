@@ -73,11 +73,10 @@ void GameMain::draw() {
 	// スコアの表示
 	{
 		const Vec2f offset = Vec2f(Window::right - 350, Window::down + 150);
-		const Vec2f score_size = Vec2f(100, 100);
-		Score::dispScore(images_[NUMBER],
-			offset,
-			score_size,
-			Score::current_score);
+		const int score_size = 100;
+		std::string disp_score = Score::intToString(player_.run_distance_);
+		Score::font_.size(score_size);
+		Score::font_.draw(disp_score, offset, Color::white);
 	}
 
 	player_.draw();
